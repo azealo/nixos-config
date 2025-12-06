@@ -10,7 +10,6 @@
      lollypop
      micro
      protonup-qt
-     zed-editor
      fastfetch
      android-studio
      protonvpn-gui
@@ -28,7 +27,6 @@
      recordbox
      lutris
      qbittorrent
-     music-discord-rpc
      intel-vaapi-driver
      intel-media-driver 
      (discord.override {
