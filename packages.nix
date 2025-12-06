@@ -10,6 +10,7 @@
      lollypop
      micro
      protonup-qt
+     protonup-ng
      fastfetch
      android-studio
      protonvpn-gui
