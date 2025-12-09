@@ -3,33 +3,44 @@
 {
 
  environment.systemPackages = with pkgs; [
+     # Development stuff
      curl
      wget
      git
+     jdk
      lshw
-     lollypop
+     android-studio
+     flutter
+     clang
+     cmake
+     ninja
+     pkg-config
+     vscodium-fhs
+
+     # General programs
      micro
+     fastfetch
+     jetbrains-mono
+     nerd-fonts.jetbrains-mono
+     alacritty
+     recordbox
+     qbittorrent
+     protonvpn-gui
+     noisetorch
+     lollypop
+     intel-vaapi-driver
+     intel-media-driver
+
+     # Gaming and related stuff
      protonup-qt
      protonup-ng
-     fastfetch
-     android-studio
-     protonvpn-gui
-     vscodium-fhs
-     lollypop
      steam
      steam-run
      steam-unwrapped
      r2modman
      gamescope
-     jetbrains-mono
-     nerd-fonts.jetbrains-mono
      mangohud
-     alacritty
-     recordbox
-     lutris
-     qbittorrent
-     intel-vaapi-driver
-     intel-media-driver 
+     lutris 
      (discord.override {
       withOpenASAR = true;
       withVencord = true;
