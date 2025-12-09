@@ -66,5 +66,10 @@
   # Enable AppImage
   programs.appimage.enable = true;
   programs.appimage.binfmt = true;
+  
+  nixpkgs.config = {
+    # Accept Android SDK licenses
+    android_sdk.accept_license = true;
+  };
 
 }
