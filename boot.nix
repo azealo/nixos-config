@@ -11,7 +11,7 @@
 
     plymouth = {
       enable = true;
-      theme = "bgrt";
+      theme = "spinner";
      # themePackages = with pkgs; [
      #   # By default we would install all themes
      #   (adi1090x-plymouth-themes.override {

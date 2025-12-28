@@ -8,13 +8,6 @@
      wget
      git
      jdk
-     lshw
-     android-studio
-     flutter
-     android-tools
-     clang
-     cmake
-     ninja
      pkg-config
      vscodium-fhs
 
@@ -41,6 +34,7 @@
      r2modman
      gamescope
      mangohud
+     osu-lazer-bin
      lutris 
      (discord.override {
       withOpenASAR = true;
@@ -69,10 +63,6 @@
   # Enable AppImage
   programs.appimage.enable = true;
   programs.appimage.binfmt = true;
-  
-  nixpkgs.config = {
-    # Accept Android SDK licenses
-    android_sdk.accept_license = true;
-  };
+
 
 }
