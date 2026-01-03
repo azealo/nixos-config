@@ -24,8 +24,20 @@
      lollypop
      intel-vaapi-driver
      intel-media-driver
+     unrar
+
+     # For Electric Guitar and Audio stuff
+     pavucontrol 
+     qpwgraph    
+     guitarix    
+     reaper
+     ardour
+     wineWowPackages.staging 
+     pipewire.jack
+     wineasio                
 
      # Gaming and related stuff
+     wine
      protonup-qt
      protonup-ng
      steam
@@ -35,7 +47,8 @@
      gamescope
      mangohud
      osu-lazer-bin
-     lutris 
+     bottles
+     winetricks
      (discord.override {
       withOpenASAR = true;
       withVencord = true;
