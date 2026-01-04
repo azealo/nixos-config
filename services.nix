@@ -27,21 +27,22 @@
     #media-session.enable = true;
   };
 
-    # Enable touchpad support (enabled default in most desktopManager).
+  # Needed so I dont type pw-jack every single time
+  environment.etc."ld.so.conf.d/pipewire-jack.conf".text = "${pkgs.pipewire.jack}/lib";
+
+  # Enable touchpad support (enabled default in most desktopManager).
   # services.xserver.libinput.enable = true;
 
   # Enable Flatpak
   services.flatpak.enable = true;
   xdg.portal.enable = true;
 
+  # Bluetooth
   hardware.bluetooth = {
     enable = true;
     powerOnBoot = true;
     settings.General = {
       experimental = true; # show battery
-
-      # https://www.reddit.com/r/NixOS/comments/1ch5d2p/comment/lkbabax/
-      # for pairing bluetooth controller
       Privacy = "device";
       JustWorksRepairing = "always";
       Class = "0x000100";

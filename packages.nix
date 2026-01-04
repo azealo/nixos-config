@@ -27,7 +27,7 @@
      unrar
 
      # For Electric Guitar and Audio stuff
-     pavucontrol 
+     pwvucontrol 
      qpwgraph    
      guitarix    
      reaper
@@ -47,6 +47,7 @@
      gamescope
      mangohud
      osu-lazer-bin
+     prismlauncher
      bottles
      winetricks
      (discord.override {
