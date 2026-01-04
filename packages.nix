@@ -74,7 +74,7 @@
   # Enable Android Debug Bridge
   programs.adb.enable = true;
 
-  # Enable AppImage
+  # Enable AppImage Support
   programs.appimage.enable = true;
   programs.appimage.binfmt = true;
 

@@ -4,7 +4,7 @@
   # Enable networking
   networking.networkmanager.enable = true;
 
-  # Zapret DPI Bypasss
+  # Zapret DPI Bypass
 
     networking = {
     hostName = "nixos";

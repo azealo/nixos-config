@@ -50,5 +50,6 @@
     };
   };
 
+  # Dont need it since I use KDE Plasma
   # services.blueman.enable = true;
 }

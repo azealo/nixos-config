@@ -9,9 +9,10 @@
     # Use the latest kernel
     kernelPackages = pkgs.linuxPackages_latest;
 
+    # Enable Plymouth Boot Animation
     plymouth = {
       enable = true;
-      theme = "spinner";
+      theme = "bgrt";
      # themePackages = with pkgs; [
      #   # By default we would install all themes
      #   (adi1090x-plymouth-themes.override {
