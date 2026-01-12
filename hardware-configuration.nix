@@ -24,6 +24,12 @@
       fsType = "vfat";
       options = [ "fmask=0077" "dmask=0077" ];
     };
+
+  fileSystems."/mnt" = {
+      device = "/dev/disk/by-uuid/42CA2B9DCA2B8C6B";
+      fsType = "ntfs-3g"; 
+      options = [ "rw" "uid=1000" "nofail" ]; 
+    };
     
   swapDevices =
     [ { device = "/dev/disk/by-uuid/a93993cd-7f50-4a3d-a03e-6f246b788131"; }

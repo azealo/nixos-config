@@ -34,7 +34,9 @@
      ardour
      wineWowPackages.staging 
      pipewire.jack
-     wineasio                
+     wineasio
+     yabridge
+     yabridgectl             
 
      # Gaming and related stuff
      wine
