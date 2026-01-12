@@ -11,6 +11,8 @@
       ./locale.nix
       ./networking.nix
       ./boot.nix
+      ./home-manager/home-manager.nix
+      <home-manager/nixos>
     ];
   
   # Allow unfree packages

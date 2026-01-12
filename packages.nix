@@ -10,6 +10,7 @@
      jdk
      pkg-config
      vscodium-fhs
+     antigravity-fhs
 
      # General programs
      micro
