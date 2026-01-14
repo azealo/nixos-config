@@ -50,7 +50,7 @@
      gamescope
      mangohud
      osu-lazer-bin
-     # prismlauncher 9.4 added in flake
+     prismlauncher
      bottles
      winetricks
      (discord.override {
