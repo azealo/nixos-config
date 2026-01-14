@@ -7,10 +7,10 @@
 
   outputs = { self, nixpkgs, nixpkgs-prism, ... }:
   let
-    system = "x86_64-linux"; 
+    system = "x86_64-linux"; # adjust to your system (e.g., "aarch64-linux")
     pkgs-prism = import nixpkgs-prism { inherit system; config.allowUnfree = true; };
   in {
-    nixosConfigurations.azealo = nixpkgs.lib.nixosSystem {
+    nixosConfigurations.your-hostname = nixpkgs.lib.nixosSystem {
       inherit system;
       modules = [
         ./configuration.nix
