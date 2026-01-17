@@ -21,6 +21,13 @@
   # Enable Flakes
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
+  # Delete generations older than 3 days
+  nix.gc = {
+    automatic = true;
+    dates = "daily";
+    options = "--delete-older-than 3d";
+  };
+
 
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions
