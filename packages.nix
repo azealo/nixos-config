@@ -26,6 +26,7 @@
      intel-vaapi-driver
      intel-media-driver
      unrar
+     nicotine-plus
 
      # For Electric Guitar and Audio stuff
      pwvucontrol 
