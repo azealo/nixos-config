@@ -17,6 +17,7 @@
      fastfetch
      jetbrains-mono
      nerd-fonts.jetbrains-mono
+     meslo-lgs-nf
      alacritty
      recordbox
      qbittorrent
@@ -30,6 +31,7 @@
      btop
      fzf
      obsidian
+     zsh-powerlevel10k
 
      # For Electric Guitar and Audio stuff
      pwvucontrol 

@@ -12,6 +12,7 @@
     enableCompletion = true;
     autosuggestions.enable = true;
     syntaxHighlighting.enable = true;
+    promptInit = "source ${pkgs.zsh-powerlevel10k}/share/zsh-powerlevel10k/powerlevel10k.zsh-theme";
 
     # Enable Oh My Zsh framework
     ohMyZsh = {
@@ -20,6 +21,7 @@
         "git"
         "zoxide"
         "fzf"
+        "sudo"
       ];
       theme = "robbyrussell";
     };
@@ -42,5 +44,10 @@
     enable = true;
     enableZshIntegration = true;
   };
+
+  programs.fzf = {
+    keybindings = true;
+    fuzzyCompletion = true;
+  }
 
 }
