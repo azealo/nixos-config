@@ -29,6 +29,7 @@
      nicotine-plus
      btop
      fzf
+     obsidian
 
      # For Electric Guitar and Audio stuff
      pwvucontrol 
