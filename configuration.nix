@@ -11,6 +11,7 @@
       ./locale.nix
       ./networking.nix
       ./boot.nix
+      ./shell.nix
       ./home-manager/home-manager.nix
       <home-manager/nixos>
     ];

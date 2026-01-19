@@ -27,6 +27,8 @@
      intel-media-driver
      unrar
      nicotine-plus
+     btop
+     fzf
 
      # For Electric Guitar and Audio stuff
      pwvucontrol 

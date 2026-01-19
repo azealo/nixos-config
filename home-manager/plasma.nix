@@ -21,8 +21,8 @@
       kdeglobals.WM.inactiveBackground = "32,36,40";
       kdeglobals.WM.inactiveBlend = "161,169,177";
       kdeglobals.WM.inactiveForeground = "161,169,177";
-      kscreenlockerrc."Greeter/Wallpaper/org.kde.image/General".Image = "../assets/wallpaper/nix-wallpaper-nineish-catppuccin-mocha.svg";
-      kscreenlockerrc."Greeter/Wallpaper/org.kde.image/General".PreviewImage = "../assets/wallpaper/nix-wallpaper-nineish-catppuccin-mocha.svg";
+      kscreenlockerrc."Greeter/Wallpaper/org.kde.image/General".Image = "../assets/wallpaper/innerspeaker-wide.jpg";
+      kscreenlockerrc."Greeter/Wallpaper/org.kde.image/General".PreviewImage = "../assets/wallpaper/innerspeaker-wide.jpg";
       ksmserverrc.General.loginMode = "emptySession";
       ksplashrc.KSplash.Engine = "none";
       ksplashrc.KSplash.Theme = "None";
@@ -32,7 +32,7 @@
       plasmanotifyrc."Applications/com.rtosta.zapzap".Seen = true;
       plasmanotifyrc."Applications/com.usebottles.bottles".Seen = true;
       plasmanotifyrc."Applications/discord".Seen = true;
-      plasmarc.Wallpapers.usersWallpapers = "../assets/wallpaper/nix-wallpaper-nineish-catppuccin-mocha.svg";
+      plasmarc.Wallpapers.usersWallpapers = "../assets/wallpaper/innerspeaker-wide.jpg";
     };
   };
 }
