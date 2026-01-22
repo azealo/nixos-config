@@ -10,9 +10,12 @@
     programs.zsh = {
     enable = true;
     enableCompletion = true;
-    autosuggestions.enable = true;
+    autosuggestions.enable = true;  
     syntaxHighlighting.enable = true;
-    promptInit = "source ${pkgs.zsh-powerlevel10k}/share/zsh-powerlevel10k/powerlevel10k.zsh-theme";
+    enableBashCompletion = true;
+    promptInit = "
+    source ${pkgs.zsh-powerlevel10k}/share/zsh-powerlevel10k/powerlevel10k.zsh-theme
+    ";
 
     # Enable Oh My Zsh framework
     ohMyZsh = {
@@ -22,15 +25,21 @@
         "zoxide"
         "fzf"
         "sudo"
+        "zsh-interactive-cd"
       ];
-      theme = "robbyrussell";
+      theme = "powerlevel10k";
     };
 
     shellAliases = {
       ff = "fastfetch";
       rebuild = "sudo nixos-rebuild switch";
-      cd = "z";
     };
+
+    interactiveShellInit = ''
+      # Alias zoxide to cd
+      eval "$(zoxide init zsh --cmd cd)"
+      source ${pkgs.zsh-history-substring-search}/share/zsh-history-substring-search/zsh-history-substring-search.zsh
+    '';
 
     histSize = 10000;
     histFile = "$HOME/.zsh_history";

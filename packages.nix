@@ -12,26 +12,35 @@
      vscodium-fhs
      antigravity-fhs
 
-     # General programs
+     # For Shell and Terminal
      micro
      fastfetch
      jetbrains-mono
      nerd-fonts.jetbrains-mono
      meslo-lgs-nf
      alacritty
+     btop
+     fzf
+     zsh-powerlevel10k
+     zsh-history-substring-search
+
+     # General programs
      recordbox
      qbittorrent
      protonvpn-gui
      noisetorch
      lollypop
-     intel-vaapi-driver
-     intel-media-driver
      unrar
      nicotine-plus
-     btop
-     fzf
      obsidian
-     zsh-powerlevel10k
+
+     # Intel Drivers
+     intel-vaapi-driver
+     intel-media-driver
+
+     # Required for Nyrna
+     xdotool
+     wmctrl
 
      # For Electric Guitar and Audio stuff
      pwvucontrol 
@@ -47,8 +56,6 @@
 
      # Gaming and related stuff
      wine
-     protonup-qt
-     protonup-ng
      steam
      steam-run
      steam-unwrapped
@@ -76,8 +83,12 @@
   programs.steam = {
     enable = true;
     remotePlay.openFirewall = true; # Open ports in the firewall for Steam Remote Play
-    # dedicatedServer.openFirewall = true; # Open ports in the firewall for Source Dedicated Server
+    dedicatedServer.openFirewall = true; # Open ports in the firewall for Source Dedicated Server
     localNetworkGameTransfers.openFirewall = true; # Open ports in the firewall for Steam Local Network Game Transfers
+    extraCompatPackages = [
+      # Install ProtonGE
+      pkgs.proton-ge-bin
+    ];
   };
 
   # Enable Feral Gamemode
