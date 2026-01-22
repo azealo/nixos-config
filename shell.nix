@@ -27,7 +27,6 @@
         "sudo"
         "zsh-interactive-cd"
       ];
-      theme = "powerlevel10k";
     };
 
     shellAliases = {
