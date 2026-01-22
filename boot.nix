@@ -6,8 +6,8 @@
     loader.systemd-boot.enable = true;
     loader.efi.canTouchEfiVariables = true;
     
-    # Use the latest kernel
-    kernelPackages = pkgs.linuxPackages_latest;
+    # Use the XanMod latest kernel
+    kernelPackages = pkgs.linuxPackages_xanmod_latest;
 
     # Enable Plymouth Boot Animation
     plymouth = {
@@ -19,6 +19,14 @@
      #     selected_themes = [ "rings" ];
      #   })
      # ];
+    };
+
+    # Adjustments for zram
+    kernel.sysctl = {
+      "vm.swappiness" = 180; # High value is good for zRAM (max is 200)
+      "vm.watermark_boost_factor" = 0; # Reduces stuttering when memory is tight
+      "vm.watermark_scale_factor" = 125;
+      "vm.page-cluster" = 0; 
     };
 
     # Enable "Silent boot"
