@@ -1,4 +1,4 @@
-{ config, pkgs, ... }: 
+{ config, pkgs, ... }:
 
 {
 
@@ -6,11 +6,11 @@
   users.users.azealo = {
     shell = pkgs.zsh;
   };
-    # Enable zsh
-    programs.zsh = {
+  # Enable zsh
+  programs.zsh = {
     enable = true;
     enableCompletion = true;
-    autosuggestions.enable = true;  
+    autosuggestions.enable = true;
     syntaxHighlighting.enable = true;
     enableBashCompletion = true;
     promptInit = "

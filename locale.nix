@@ -1,7 +1,7 @@
 { config, pkgs, ... }:
 
 {
-   # Set your time zone.
+  # Set your time zone.
   time.timeZone = "Europe/Istanbul";
 
   # Select internationalisation properties.
@@ -19,7 +19,7 @@
     LC_TIME = "tr_TR.UTF-8";
   };
 
-    # Configure keymap in X11
+  # Configure keymap in X11
   services.xserver.xkb = {
     layout = "tr";
     variant = "";

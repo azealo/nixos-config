@@ -5,12 +5,20 @@
     enable = true;
     shortcuts = {
 
-      kwin."Window Close" = ["Meta+Q" "Alt+F4"];
+      kwin."Window Close" = [
+        "Meta+Q"
+        "Alt+F4"
+      ];
       kwin."Window Fullscreen" = "Meta+F";
       "services/Alacritty.desktop"._launch = "Meta+Return";
       "services/app.zen_browser.zen.desktop"._launch = "Meta+W";
-      "services/org.kde.krunner.desktop"._launch = ["Meta+D" "Search" "Alt+F2" "Alt+Space"];
-   
+      "services/org.kde.krunner.desktop"._launch = [
+        "Meta+D"
+        "Search"
+        "Alt+F2"
+        "Alt+Space"
+      ];
+
     };
     configFile = {
       kcminputrc.Mouse.cursorSize = 32;
@@ -21,8 +29,10 @@
       kdeglobals.WM.inactiveBackground = "32,36,40";
       kdeglobals.WM.inactiveBlend = "161,169,177";
       kdeglobals.WM.inactiveForeground = "161,169,177";
-      kscreenlockerrc."Greeter/Wallpaper/org.kde.image/General".Image = "../assets/wallpaper/innerspeaker-wide.jpg";
-      kscreenlockerrc."Greeter/Wallpaper/org.kde.image/General".PreviewImage = "../assets/wallpaper/innerspeaker-wide.jpg";
+      kscreenlockerrc."Greeter/Wallpaper/org.kde.image/General".Image =
+        "../assets/wallpaper/innerspeaker-wide.jpg";
+      kscreenlockerrc."Greeter/Wallpaper/org.kde.image/General".PreviewImage =
+        "../assets/wallpaper/innerspeaker-wide.jpg";
       ksmserverrc.General.loginMode = "emptySession";
       ksplashrc.KSplash.Engine = "none";
       ksplashrc.KSplash.Theme = "None";

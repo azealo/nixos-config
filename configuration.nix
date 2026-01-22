@@ -1,26 +1,29 @@
 { config, pkgs, ... }:
 
 {
-  imports =
-    [ # Include the results of the hardware scan.
-      ./hardware-configuration.nix
-      ./packages.nix
-      ./nvidia.nix
-      ./users.nix
-      ./services.nix
-      ./locale.nix
-      ./networking.nix
-      ./boot.nix
-      ./shell.nix
-      ./home-manager/home-manager.nix
-      <home-manager/nixos>
-    ];
-  
+  imports = [
+    # Include the results of the hardware scan.
+    ./hardware-configuration.nix
+    ./packages.nix
+    ./nvidia.nix
+    ./users.nix
+    ./services.nix
+    ./locale.nix
+    ./networking.nix
+    ./boot.nix
+    ./shell.nix
+    ./home-manager/home-manager.nix
+    <home-manager/nixos>
+  ];
+
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
   # Enable Flakes
-  nix.settings.experimental-features = [ "nix-command" "flakes" ];
+  nix.settings.experimental-features = [
+    "nix-command"
+    "flakes"
+  ];
 
   # Delete generations older than 3 days
   nix.gc = {
@@ -28,7 +31,6 @@
     dates = "daily";
     options = "--delete-older-than 3d";
   };
-
 
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions

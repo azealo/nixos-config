@@ -11,6 +11,7 @@
      pkg-config
      vscodium-fhs
      antigravity-fhs
+     nixfmt
 
      # For Shell and Terminal
      micro
