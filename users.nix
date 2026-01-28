@@ -9,10 +9,11 @@
       "wheel"
       "adbusers"
       "kvm"
+      "scanner"
+      "lp"
     ];
     packages = with pkgs; [
       kdePackages.kate
-      #  thunderbird
     ];
   };
 }

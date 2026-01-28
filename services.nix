@@ -11,10 +11,25 @@
     desktopManager.plasma6.enable = true;
 
     # Enable CUPS to print documents.
-    printing.enable = true;
+    printing = {
+      enable = true;
+      drivers = [
+        # Brother printer drivers
+        pkgs.brlaser
+      ];
+    };
+
+    avahi = {
+      enable = true;
+      nssmdns4 = true;
+      openFirewall = true;
+    };
 
     # Helps with frequency scaling for Intel CPU
     thermald.enable = true;
+
+    # Enable Geo-location detection
+    geoclue2.enable = true;
 
     # Enable sound with pipewire.
     pulseaudio.enable = false;
@@ -62,6 +77,13 @@
       Class = "0x000100";
       FastConnectable = true;
     };
+  };
+
+  # Enable document scanning
+  hardware.sane = {
+    enable = true;
+    brscan5.enable = true;
+    extraBackends = [ pkgs.sane-airscan ];
   };
 
   # Dont need it since I use KDE Plasma

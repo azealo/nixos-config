@@ -4,6 +4,25 @@
   # Enable networking
   networking.networkmanager.enable = true;
 
+  # Firewall Settings
+  networking.firewall = {
+    enable = true;
+
+    # Waydroid Fix For Zapret DPI
+    trustedInterfaces = [ "waydroid0" ];
+    checkReversePath = "loose";
+
+    # Open ports for Soulseek/Nicotine+
+    allowedTCPPorts = [
+      2234
+      2235
+    ];
+    allowedUDPPorts = [
+      2234
+      2235
+    ];
+  };
+
   # Zapret DPI Bypass
 
   networking = {
