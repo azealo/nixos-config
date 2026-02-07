@@ -25,6 +25,9 @@
     zsh-powerlevel10k
     zsh-history-substring-search
     waydroid-helper
+    distrobox
+    distroshelf
+    podman
 
     # General programs
     recordbox
@@ -39,6 +42,7 @@
     wl-clipboard
     tauon
     libreoffice
+    puddletag
 
     # Required for Logitech Mouse keybindings
     logitech-udev-rules
@@ -76,6 +80,7 @@
     prismlauncher
     bottles
     winetricks
+    heroic
     (discord.override {
       withOpenASAR = true;
       withVencord = true;

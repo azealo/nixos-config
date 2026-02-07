@@ -86,6 +86,9 @@
     extraBackends = [ pkgs.sane-airscan ];
   };
 
+  # Enable Podman Container Engine
+  virtualisation.podman.enable = true;
+
   # Dont need it since I use KDE Plasma
   # services.blueman.enable = true;
 }

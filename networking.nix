@@ -51,4 +51,8 @@
     ];
   };
 
+  security.pki.certificateFiles = [
+    ./assets/meb-certificate.crt
+  ];
+
 }
