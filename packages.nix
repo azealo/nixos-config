@@ -3,6 +3,10 @@
 {
 
   environment.systemPackages = with pkgs; [
+    # KDE Packages
+    kdePackages.kdenlive
+    kdePackages.filelight
+
     # Development stuff
     curl
     wget
@@ -11,6 +15,8 @@
     pkg-config
     vscodium-fhs
     antigravity-fhs
+    code-cursor-fhs
+    opencode
     nixfmt
 
     # For Shell and Terminal
@@ -43,6 +49,10 @@
     tauon
     libreoffice
     puddletag
+    chromium
+    handbrake
+    audacity
+    bleachbit
 
     # Required for Logitech Mouse keybindings
     logitech-udev-rules

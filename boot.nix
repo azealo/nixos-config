@@ -7,7 +7,7 @@
     loader.efi.canTouchEfiVariables = true;
 
     # Use the XanMod latest kernel
-    kernelPackages = pkgs.linuxPackages_xanmod_latest;
+    kernelPackages = pkgs.linuxPackages_6_12;
 
     # Enable Plymouth Boot Animation
     plymouth = {
