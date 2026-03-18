@@ -31,6 +31,9 @@
     # Enable Geo-location detection
     geoclue2.enable = true;
 
+    # Enable fwupd daemon to update firmwares
+    fwupd.enable = true;
+
     # Enable sound with pipewire.
     pulseaudio.enable = false;
     pipewire = {
