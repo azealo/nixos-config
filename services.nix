@@ -47,6 +47,12 @@
       # no need to redefine it in your config for now)
       #media-session.enable = true;
     };
+
+    udev.extraRules = ''
+      # Standard Arduino / Common USB-Serial
+      SUBSYSTEMS=="usb", ATTRS{idVendor}=="2341", MODE="0666"
+      SUBSYSTEMS=="usb", ATTRS{idVendor}=="1a86", MODE="0666"
+    '';
   };
 
   # For low latency audio

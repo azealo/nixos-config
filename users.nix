@@ -12,6 +12,7 @@
       "scanner"
       "lp"
       "cdrom"
+      "dialout"
     ];
     packages = with pkgs; [
       kdePackages.kate

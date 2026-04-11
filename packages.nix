@@ -20,6 +20,9 @@
     code-cursor-fhs
     opencode
     nixfmt
+    arduino-ide
+    arduino-cli
+    fritzing
 
     # For Shell and Terminal
     micro
