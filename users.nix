@@ -11,6 +11,7 @@
       "kvm"
       "scanner"
       "lp"
+      "cdrom"
     ];
     packages = with pkgs; [
       kdePackages.kate

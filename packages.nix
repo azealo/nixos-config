@@ -6,6 +6,8 @@
     # KDE Packages
     kdePackages.kdenlive
     kdePackages.filelight
+    kdePackages.partitionmanager
+    kdePackages.k3b
 
     # Development stuff
     curl
@@ -53,6 +55,10 @@
     handbrake
     audacity
     bleachbit
+    gparted
+    brasero
+    logmein-hamachi
+    haguichi
 
     # Required for Logitech Mouse keybindings
     logitech-udev-rules
@@ -67,6 +73,8 @@
     wmctrl
 
     # For Electric Guitar and Audio stuff
+    noisetorch
+    easyeffects
     pwvucontrol
     qpwgraph
     guitarix
