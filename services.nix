@@ -43,16 +43,50 @@
       pulse.enable = true;
       jack.enable = true;
 
-      # use the example session manager (no others are packaged yet so this is enabled by default,
-      # no need to redefine it in your config for now)
-      #media-session.enable = true;
+      extraConfig.pipewire = {
+        "10-null-sink" = {
+          "context.objects" = [
+            {
+              factory = "adapter";
+              args = {
+                "factory.name" = "support.null-audio-sink";
+                "node.name" = "audiorelay-virtual-mic-sink";
+                "node.description" = "Virtual Mic Sink";
+                "media.class" = "Audio/Sink";
+                "audio.position" = "FL,FR";
+              };
+            }
+          ];
+        };
+        "20-virtual-mic" = {
+          "context.modules" = [
+            {
+              name = "libpipewire-module-loopback";
+              args = {
+                "capture.props" = {
+                  "node.target" = "audiorelay-virtual-mic-sink";
+                };
+                "playback.props" = {
+                  "node.name" = "audiorelay-virtual-mic";
+                  "node.description" = "Virtual Mic";
+                  "media.class" = "Audio/Source";
+                  "audio.position" = "FL,FR";
+                  "node.passive" = true;
+                };
+              };
+            }
+          ];
+        };
+      };
     };
 
+    udev.packages = [ pkgs.platformio-core.udev ];
     udev.extraRules = ''
       # Standard Arduino / Common USB-Serial
       SUBSYSTEMS=="usb", ATTRS{idVendor}=="2341", MODE="0666"
       SUBSYSTEMS=="usb", ATTRS{idVendor}=="1a86", MODE="0666"
     '';
+
   };
 
   # For low latency audio

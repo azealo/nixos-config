@@ -13,9 +13,9 @@
       "lp"
       "cdrom"
       "dialout"
+      "tty"
     ];
     packages = with pkgs; [
-      kdePackages.kate
     ];
   };
 }

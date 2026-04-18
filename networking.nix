@@ -16,10 +16,13 @@
     allowedTCPPorts = [
       2234
       2235
+      59100
     ];
     allowedUDPPorts = [
       2234
       2235
+      59100
+      59200
     ];
   };
 

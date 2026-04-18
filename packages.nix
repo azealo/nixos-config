@@ -8,6 +8,7 @@
     kdePackages.filelight
     kdePackages.partitionmanager
     kdePackages.k3b
+    kdePackages.kate
 
     # Development stuff
     curl
@@ -16,13 +17,21 @@
     jdk
     pkg-config
     vscodium-fhs
+    zed-editor
     antigravity-fhs
     code-cursor-fhs
+    claude-code
+    gemini-cli
     opencode
     nixfmt
     arduino-ide
     arduino-cli
     fritzing
+    platformio
+    esptool
+    python3
+    wireshark
+    netcat
 
     # For Shell and Terminal
     micro
@@ -75,19 +84,12 @@
     xdotool
     wmctrl
 
-    # For Electric Guitar and Audio stuff
+    # Audio stuff
     noisetorch
     easyeffects
     pwvucontrol
     qpwgraph
-    guitarix
-    reaper
-    ardour
-    wineWowPackages.staging
     pipewire.jack
-    wineasio
-    yabridge
-    yabridgectl
 
     # Gaming and related stuff
     wine
